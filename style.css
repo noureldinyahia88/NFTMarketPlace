@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------------------------------------------
+------------------------------------------------
+1. Universal Styles
+------------------------------------------------
+
+----------------------------------------------*/
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #110229;
+    padding: 20px 20px 20px 20px;
+    height: 100%;
+    margin: 0;
+}
+
+
+.main-section {
+    background-image: url('./image/image 77.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    height: 840px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.signup{
+    background: linear-gradient(101.9deg, #7273D9 7.67%, #B35BC7 52.66%, #D927C3 93.7%);
+    
+}
+
+.sec-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.left{
+    position: relative;
+    left: 30px;
+    top: 90px;
+}
+.left h1{
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 24px;
+}
+.left p{
+    margin-bottom: 56px;
+}
+
+.left .explore, .left .create{
+    padding: 16px 32px;
+
+}
+.left .explore{
+    background: linear-gradient(101.9deg, #6477DD 7.67%, #C753C1 52.66%, #DC1DC3 93.7%);
+}
+
+.left .create{
+    border-image: linear-gradient(95.92deg, #6578DD 2.11%, #B35BC7 47.11%, #DC1DC4 98.85%);
+    border-image-slice: 1;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.box {
+    width: 500px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    margin-top: 67px;
+}
+
+.child {
+    text-align: center;
+    width: 90px;
+    height: 50px;
+    margin: 0 10px;
+}
+.child h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.child .p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #DEDEDE
+}
+.logos-platforms{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* *******pop***** */
+
+  .wrapper {
+    position: fixed;
+    bottom: 50px;
+    right: -370px;
+    max-width: 345px;
+    width: 100%;
+    background: #110229;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 9999;
+  }
+  .wrapper.show {
+    right: 20px;
+  }
+  .wrapper header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  header i {
+    color: #fff;
+    font-size: 32px;
+  }
+  header h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .wrapper .data {
+    margin-top: 16px;
+  }
+  .wrapper .data p {
+    color: #fff;
+    font-size: 16px;
+  }
+  .data p a {
+    color: gray;
+    text-decoration: none;
+  }
+  .data p a:hover {
+    text-decoration: underline;
+  }
+  .wrapper .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buttons .button {
+    border: none;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 4px;
+    background: linear-gradient(101.9deg, #6477DD 7.67%, #C753C1 52.66%, #DC1DC3 93.7%);
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+  }
+  #declineBtn {
+    border-image: linear-gradient(95.92deg, #6578DD 2.11%, #B35BC7 47.11%, #DC1DC4 98.85%);
+    border-image-slice: 1;
+    border-width: 1px;
+    border-style: solid;
+  }
+  #declineBtn:hover {
+    background-color: #4070f4;
+    color: #fff;
+  }
+
+/* ************ */
+
+/****************************** howItWorkSction ***********************************/
+.howItWorkSction .explore{
+    background: linear-gradient(101.9deg, #6477DD 7.67%, #C753C1 52.66%, #DC1DC3 93.7%);
+    width: 121px;
+    height: 53px;
+}
+
+.howItWorkSction{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.right-sction{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.right-sction .card {
+    width: 356px;
+    height: 233px;
+    border-image-source: linear-gradient(90.12deg, #7472D9 0.12%, #A560CB 49.93%, rgba(0, 0, 0, 0) 99.9%);
+    border-image-slice: 1;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.right-sction .card .card-icon{
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(2px);
+    border-radius: 4px;
+}
+
+/* *************Trening Auctions****************** */
+.arrows .arrow{
+    width: 40px;
+    height: 52px;
+    border: 0.5px solid rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(2px);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.arrows .arrow.active{
+    border: 1px solid #FFFFFF;
+}
+
+.price-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 24px;
+    margin-bottom: 100px;
+}
+.price-cards .card-sec{
+    padding: 10px;
+    width: 384px;
+    height: 562px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* *****Subscribe Our Newsletters***** */
+
+.subscribe{
+    width: 1056px;
+    height: 352px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subscribe .input input{
+    padding: 5px 10px;
+    width: 547px;
+    height: 56px;
+}
+.subscribe .input input:focus{
+    outline: none;
+}
+.subscribe .explore{
+    background: linear-gradient(101.9deg, #6477DD 7.67%, #C753C1 52.66%, #DC1DC3 93.7%);
+    width: 121px;
+    height: 56px;
+    margin-left: -4px;
+}
